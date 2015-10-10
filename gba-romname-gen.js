@@ -17,16 +17,14 @@ if (process.argv.length != 3 || process.argv.some(v => v == '--help' || v == '-h
 
 let romsPath = process.argv[2];
 
-let padRight = (str, n) => str + (str.length < n ? SP.repeat(n - str.length) : '');
-
 let extractRomInfo = (filename) => {
   let romData = new Buffer(0xC0);
   let fd = fs.openSync(filename, 'r');
   fs.readSync(fd, romData, 0, romData.length, 0);
   fs.closeSync(fd);
   return {
-    gameTitle: romData.slice(0xA0, 0xA0 + 12).toString().replace(/\0/g, SP),
-    gameCode: romData.slice(0xAC, 0xAC + 4).toString().replace(/\0/g, SP),
+    gameTitle: romData.slice(0xA0, 0xA0 + 12).toString('utf8').replace(/\0/g, SP),
+    gameCode: romData.slice(0xAC, 0xAC + 4).toString('utf8').replace(/\0/g, SP),
   };
 };
 
