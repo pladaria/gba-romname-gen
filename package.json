@@ -1,0 +1,15 @@
+{
+  "name": "gba-romname-gen",
+  "version": "1.0.0",
+  "description": "GBA romnames.lst file generator for EZ4 Client",
+  "main": "gba-romname-gen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Ladaria <pedro.ladaria@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fs-walk": "0.0.1",
+    "iconv-lite": "^0.4.13"
+  }
+}
