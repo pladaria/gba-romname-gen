@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+/**
+ * @author Pedro Ladaria <pedro.ladaria@gmail.com>
+ */
 'use strict';
 
 const SP = ' ';

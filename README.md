@@ -1,6 +1,6 @@
-# GBA romname.lst Generator
+# GBA romname.lst Generator for EZ4 Client
 
-EZ_Client is crap. When you send a ROM which is not listed in `romname.lst` it gets stored with an empty name (".gba").
+We all know EZ_Client is crap. When you send a ROM which is not listed in `romname.lst` it gets stored with an empty name (".gba").
 
 This script creates a new `romname.lst` file using your ROM filenames.
 
@@ -26,4 +26,4 @@ Some files are ignored/skipped:
 
 ## License
 
-Public domain
+MIT
